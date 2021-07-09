@@ -4,15 +4,15 @@
 <script src="https://dev05-partners.cs84.force.com/DGTestCommunity/lightning/lightning.out.js"></script>
 <script>
      $Lightning.use("c:lightningOut", function() {
-        $Lightning.createComponent("c:createCase",{ } ,
-               "lexcontainer",// the DOM location to insert the component
-                function(component) {  
-                     console.log('we are here 1');         
-                    
-                }
+        $Lightning.createComponent("c:createCase",
+              "lightning",
+              function(cmp) {
+                console.log("LWC component was created");
+                // do some stuff
+              }
           );
         },
-       'https://dev05-partners.cs84.force.com/DGTestCommunity/'
+       '	https://dev05-partners.cs84.force.com/DGTestCommunity/'
       );
 </script>
  <div id="lexcontainer" />

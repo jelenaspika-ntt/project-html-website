@@ -1,4 +1,9 @@
 <html>
+<script runat=server>
+Platform.Load("core","1");
+HTTPHeader.SetValue("Access-Control-Allow-Methods","POST");
+HTTPHeader.SetValue("Access-Control-Allow-Origin","*");
+</script>
 <script src="	https://dev05-partners.cs84.force.com/DGTestCommunity/lightning/lightning.out.js"></script>
 <script>
      $Lightning.use("c:lightningOut", function() {
